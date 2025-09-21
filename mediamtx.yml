@@ -1,0 +1,12 @@
+# mediamtx.yml
+# 允许任意 RTSP 推流
+server:
+  protocols: [rtsp, rtmp, hls, webrtc]  # 开启支持的协议
+  rtsp:
+    listenAddr: ":8554"
+    # 不再使用 publish/readUsers/writeUsers
+
+paths:
+  mystream:
+    # 空配置即可允许推流
+
